@@ -1,4 +1,7 @@
-MIT License
+# ELE2364 (reinforcement learning) support package
+
+Package to support the deep reinforcement learning exercises of the
+ELE2364 (reinforcement learning) course at PUC-Rio.
 
 Copyright (c) 2024 Wouter Caarls
 Parts copyright (c) 2020 Gabriel Nogueira (Talendar)
@@ -20,3 +23,32 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+# Introduction
+
+This package provides the environments and approximators used in the
+ELE2364 (reinforcement learning) course at PUC-Rio. 
+
+To install, run
+
+´´´
+pip install ele2364
+´´´
+
+# Environments
+
+The environments provided in `ele2364.environments` are:
+
+- Pendulum (Pendulum-v1 from Gymnasium)
+- Lander (LunarLander-v2 from Gymnasium)
+- FlappyBird (FlappyBird-v0 by Gabriel Nogueira (Talendar))
+
+# Networks
+
+The networks provided in `ele2364.networks` are:
+
+- V (state-value network)
+- DQ (state-action value network with discrete actions)
+- CQ (state-action value network with continuous actions)
+- Mu (deterministic policy network)
+- Pi (stochastic policy network)
