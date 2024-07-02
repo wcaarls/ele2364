@@ -7,7 +7,7 @@ except:
     long_description = ''
 
 setup(name='ele2364',
-      version='0.1.0',
+      version='0.1.2',
       description='ELE2364 (reinforcement learning) support package',
       long_description=long_description,
       long_description_content_type='text/markdown',
@@ -24,6 +24,7 @@ setup(name='ele2364',
       ],
       keywords='reinforcement learning',
       packages=find_packages(),
-      install_requires=['numpy', 'gymnasium', 'torch >= 2.1.0'],
+      package_data={'ele2364.flappy_bird_gym.assets.sprites': ['*.png']},
+      install_requires=['numpy', 'gymnasium', 'pygame', 'torch >= 2.1.0'],
       entry_points = {}
      )

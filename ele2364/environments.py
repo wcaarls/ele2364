@@ -36,9 +36,10 @@ class Environment():
     def step(self, u):
         """Step environment.
         
-           obs, r, done, info = env.step(u) takes action u and
-           returns the next state observation, reward, whether
-           the episode terminated, and extra information.
+           obs, r, terminal, truncated, info = env.step(u) takes
+           action u and returns the next state observation, reward,
+           whether the episode terminated or was truncated, and
+           extra information.
         """
         observation, reward, terminal, truncated, info = self.env.step(u)
         return (observation, reward, terminal, truncated, info)
