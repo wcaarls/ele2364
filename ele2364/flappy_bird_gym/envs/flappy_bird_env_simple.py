@@ -64,7 +64,7 @@ class FlappyBirdEnvSimple(gymnasium.Env):
             be drawn.
     """
 
-    metadata = {'render.modes': ['human']}
+    metadata = {'render_modes': ['human']}
 
     def __init__(self,
                  render_mode = 'human',
@@ -148,7 +148,7 @@ class FlappyBirdEnvSimple(gymnasium.Env):
 
         return obs, reward, done, False, info
 
-    def reset(self):
+    def reset(self, seed=None, options=None):
         """ Resets the environment (starts a new game). """
         self._game = FlappyBirdLogic(screen_size=self._screen_size,
                                      pipe_gap_size=self._pipe_gap)
